@@ -1,0 +1,12 @@
+This is the website of Bheesham Persaud.
+
+Author: Bheesham Persaud
+Site: https://bheesham.com/
+Location: Ottawa, Ontario
+From: Georgetown, Guyana
+PGP Key ID: 0xD589CB73
+PGP Fingerprint: 4941 2C2A 783E 30B2 DE84 D2ED 3361 7817 D589 CB73
+Email: me@bheesham.com
+Twitter: @bheeshman
+GitHub: https://github.com/bheesham
+LinkedIn: https://ca.linkedin.com/in/bheeshampersaud

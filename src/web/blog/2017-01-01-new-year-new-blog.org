@@ -1,0 +1,11 @@
+#+TITLE: New year; new blog.
+#+AUTHOR: Bheesham Persaud
+#+DATE: 2017-01-01 23:08
+
+I've finally done something I've wanted to do for a long time now: write my own
+input agnostic blogging engine (read as: experiment with Pandoc).
+
+Over the years I've grown pretty used to writing \(\LaTeX\), and now at work I
+find myself using Org-mode a whole lot to organize my thoughts.
+
+Why not get the best of all worlds?

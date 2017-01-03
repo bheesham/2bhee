@@ -1,0 +1,180 @@
+% E. Dunham -- Resume
+% Contents Copyright (C) 2014 - 2015, E. Dunham
+
+% LaTeX code for rendering the resume is distributed under the MIT license.
+% See LICENSE.txt. It means you can use the code for whatever you want,
+% including your own resume, but I'm not liable if it catches your computer on
+% fire.
+
+% Template originally developed by E. Dunham
+% https://github.com/edunham/resume/blob/master/resume.tex
+
+\documentclass[11pt]{article} % Set default font size to 11pt
+\usepackage[normalem]{ulem} % for the underlines
+\usepackage[compact]{titlesec} % Shrink default spacings
+\usepackage{tabto} % For aligning skills section
+\usepackage{hyperref}
+
+\textwidth=7in
+\textheight=10.5in
+\topmargin -1.25in % Reclaim the default whitespace from top of page 
+\oddsidemargin -.25in % Reclaim whitespace on left, make it look centered 
+\pagenumbering{gobble} % Don't number pages
+\setlength{\parindent}{0pt} % Don't indent paragraphs
+\newcommand{\heading}[1]{
+	%\section*{\centering\uline{\hfill #1 \hfill }} % Center the headings
+	\section*{\uline{\hfill #1 }} % Right-align the headings
+}
+\newcommand{\squish}{
+    \setlength{\itemsep}{0.2pt}
+    \setlength{\parskip}{0pt} % tweak parskip value to adjust total height 
+    \setlength{\parsep}{0.2pt}
+}
+\newcommand{\when}[1]{ % naming this 'date' would conflict with builtins
+    \hfill \texttt{#1}
+}
+\newcommand{\experience}[3]{ % place, optional title, date
+    \ifx&#2&
+        \item[{#1}]
+    \else
+        \item[{#1}, \emph{#2}]
+    \fi
+    \when{#3}
+}
+\newcommand{\contact}[3]{
+    \centerline{ \large \texttt{#1} $\bullet$ \texttt{#2} $\bullet$ \emph{#3} }
+}
+\newcommand{\skill}[2]{
+    \textbf{#1} \tabto{2.5in} #2
+}
+% Write C++ all fancy-like
+% http://www.parashift.com/c++-faq-lite/latex-macros.html
+\newcommand{\CPP}{
+    C\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}
+}
+
+\begin{document}
+
+\centerline{{\huge \bf Bheesham Persaud}}
+\bigskip
+
+\contact{me@bheesham.com}
+        {(613) 612 - 5847}
+        {Ottawa, Canada}
+
+\heading{Skills}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\skill{Systems Administration}
+      {Docker, ZooKeeper, Buildbot, SSH}
+
+\skill{Development}
+      {C, C\#, Rust, Clojure, Python, PHP, Java, HTML/CSS/JavaScript}
+
+\skill{Collaboration}
+      {IRC, Git, Jira}
+
+%\skill{Robotics}
+%      {Mechanical design \& prototyping, 3D modeling, OpenCV, Arduino}
+
+\heading{Employment}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{description}
+\squish
+\experience{CENX}
+           {Junior Software Developer}
+           {05/2016 - Present}
+
+Developed OSS and LSO solutions for telecommunication companies using Clojure, Datomic, Cassandra, Kafka, and Solr.
+
+Improved tools which help emulate a customer's production environment on a developer's laptop using Docker.
+
+\experience{Shared Services Canada}
+           {Developer / Analyst}
+           {04/2015 - 01/2016}
+
+Optimized programs that monitor the health and usage of large networks by reducing disk I/O and redundant steps.
+
+Created intranet websites which generate reports about network outages and changes.
+
+\experience{Carleton University}
+           {Research Assistant}
+           {05/2013 - 12/2014}
+
+Researched gesture based authentication for Android and iOS.
+
+Ported complex algorithms written in JavaScript to C/\CPP for use with the Java Native Interface.
+
+Researched increasing software diversity by creating permutations of the OpenSSL library by using it's forks: BoringSSL and LibreSSL.
+
+\experience{Carleton Computer Science Society}
+           {Carleton University}
+           {05/2012 - 05/2014}
+
+Upgraded and maintained the different services the society ran: DNS, HTTP.
+
+\experience{Canadian Association of Physicists}
+           {Web Developer}
+           {01/2012 - 04/2013}
+
+Maintained the Drupal website along with its many plugins and the Members only area.
+
+Fixed security flaws in legacy PHP and ASP systems.
+
+Created new services to manage the release of magazines on a quarterly basis using CodeIgniter (PHP).
+
+\end{description}
+
+\heading{Publications}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{description}
+\squish
+\experience{}
+           {}
+           {08/2016}
+           
+B. Persaud, B. Obada-Obieh, N. Mansourzadeh, A. Moni, and A. Somayaji. FrankenSSL: Recombining Cryptographic Libraries for Software Diversity. \textit{Proceedings of the 11th Annual Symposium On Information Assurance}.
+
+\end{description}
+
+\heading{Academics}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{description}
+\squish
+\experience{Carleton University}
+           {}
+           {09/2011 - Expected 12/2016}
+
+Bachelor of Computer Science, Computer and Internet Security \\
+Selected courses: Applied Cryptography, Computer Systems Security, Wireless Networks and Security.
+
+\end{description}
+
+\heading{Open-source Contributions}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{description}
+\squish
+\experience{Redox}
+           {\url{https://www.redox-os.org}}
+           {}
+
+Contributed a patch which allowed the operating system to run on the x86-64 architecture.
+
+\experience{xbps}
+           {\url{http://www.voidlinux.eu/}}
+           {}
+
+Improved documentation for xbps, the package manager of the Void (Linux) distribution.
+
+\experience{The Rust Programming Language}
+           {\url{http://rust-lang.org/}}
+           {}
+
+Submitted minor improvements to the project's build scripts and documentation.
+
+\experience{The Rust Project's Buildbot}
+           {\url{http://buildbot.rust-lang.org/}}
+           {}
+
+Configured Buildbot to sign all release builds automatically and added basic authentication to the instance.
+\end{description}
+\end{document}
