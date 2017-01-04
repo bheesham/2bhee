@@ -30,6 +30,8 @@ build/bheesham-persaud.pdf: $(RES_SOURCE_FILES)
 $(STATIC_OUT_FILES): $(STATIC_FILES)
 	cp -rf include/static/* build/
 
+$(WEB_OUT_FILES): $(WEB_SOURCE_FILES)
+
 build/%.html:: src/web/%.md $(T) $(WEB_OUT_DIRS)
 	$(CC) $< -o $@
 
