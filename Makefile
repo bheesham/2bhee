@@ -11,7 +11,7 @@ WEB_OUT_DIRS:=$(basename $(patsubst src/web/%,build/%,$(WEB_SOURCE_DIRS)))
 WEB_SOURCE_FILES:=$(shell find src/web -type f)
 WEB_OUT_FILES:=$(addsuffix .html,$(basename $(patsubst src/web/%,build/%,$(WEB_SOURCE_FILES))))
 
-RES_SOURCE_FILES:=$(shell find src/resume -type f)
+RES_SOURCE_FILES:=$(wildcard src/resume/*.sty) src/resume/main.tex
 
 STATIC_FILES:=$(shell find include/static -type f)
 STATIC_OUT_FILES:=$(patsubst include/static/%,build/%,$(STATIC_FILES))
@@ -20,9 +20,9 @@ default: website resume
 
 website: $(WEB_OUT_FILES) $(STATIC_OUT_FILES)
 
-resume: build/resume.pdf
+resume: build/bheesham-persaud.pdf
 
-build/resume.pdf: $(RES_SOURCE_FILES)
+build/bheesham-persaud.pdf: $(RES_SOURCE_FILES)
 	cd src/resume; pdflatex main.tex
 	cd src/resume; rm main.aux main.log main.out
 	mv src/resume/main.pdf build/bheesham-persaud.pdf
@@ -45,4 +45,4 @@ $(WEB_OUT_DIRS):
 clean:
 	rm -rf build/*
 
-.PHONY: clean default website
+.PHONY: clean default website resume
