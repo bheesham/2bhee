@@ -13,8 +13,8 @@ WEB_OUT_FILES:=$(addsuffix .html,$(basename $(patsubst src/web/%,build/%,$(WEB_S
 
 RES_SOURCE_FILES:=$(wildcard src/resume/*.sty) src/resume/main.tex
 
-STATIC_FILES:=$(shell find include/static -type f)
-STATIC_OUT_FILES:=$(patsubst include/static/%,build/%,$(STATIC_FILES))
+STATIC_SOURCE_FILES:=$(shell find include/static -type f)
+STATIC_OUT_FILES:=$(patsubst include/static/%,build/%,$(STATIC_SOURCE_FILES))
 
 default: website resume
 
@@ -27,7 +27,7 @@ build/bheesham-persaud.pdf: $(RES_SOURCE_FILES)
 	cd src/resume; rm main.aux main.log main.out
 	mv src/resume/main.pdf build/bheesham-persaud.pdf
 
-$(STATIC_OUT_FILES): $(STATIC_FILES)
+$(STATIC_OUT_FILES): $(STATIC_SOURCE_FILES)
 	cp -rf include/static/* build/
 
 $(WEB_OUT_FILES): $(WEB_SOURCE_FILES)

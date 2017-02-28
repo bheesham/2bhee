@@ -1,121 +1,35 @@
 <!DOCTYPE html>
 <html lang="en-ca"$if(dir)$ dir="$dir$"$endif$>
     <head>
+        <base href="/">
         <meta charset="utf-8">
         <meta name="generator" content="pandoc">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@bheeshman">
 
-        $for(author-meta)$
+$for(author-meta)$
         <meta name="author" content="$author-meta$">
-        $endfor$
-
-        $if(date-meta)$
+$endfor$
+$if(date-meta)$
         <meta name="dcterms.date" content="$date-meta$">
-        $endif$
-
-        $if(keywords)$
+$endif$
+$if(keywords)$
         <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$">
-        $endif$
+$endif$
 
         <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
         <meta property="og:title" content="$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$">
 
-        <style type="text/css">
-         @media print {
-             html {
-                 font-size: 12px;
-             }
-         }
-
-         @media screen {
-             html {
-                 font-size: 16px;
-             }
-         }
-
-         body {
-             font-family: sans-serif;
-             padding: 15px 50px;
-             margin: 0px;
-             max-width: 800px;
-         }
-
-         header {
-             margin-bottom: 10px;
-         }
-
-         header > a {
-             text-decoration: none;
-         }
-
-
-         nav {
-             margin: 10px 0px;
-         }
-
-         a.button {
-             background-color: #f6f6f6;
-             display: inline-block;
-             min-width: 50px;
-             padding: 5px 20px;
-             text-align: center;
-             text-decoration: none;
-             margin: 5px 0px;
-         }
-
-         a.button:hover {
-             background-color: #f6f6f6;
-         }
-
-         a:hover {
-             color: #0FA0CE;
-         }
-
-         p {
-             margin-bottom: 1rem;
-             text-align: justify;
-         }
-
-         a {
-             color: #007b9d;
-         }
-
-         footer {
-             border-top: 1px solid #000000;
-             display: block;
-             margin-top: 100px;
-         }
-
-         @media(max-width: 600px) {
-             html {
-                 font-size: 12px;
-             }
-
-             body {
-                 padding: 10px 25px;
-             }
-         }
-        </style>
-
-        <style type="text/css">code{white-space: pre;}</style>
-
-        $if(quotes)$
+        <link rel="stylesheet" type="text/css" href="bhee.css">
+$if(quotes)$
         <style type="text/css">q { quotes: "“" "”" "‘" "’"; }</style>
-        $endif$
-
-        $if(highlighting-css)$
+$endif$
+$if(highlighting-css)$
         <style type="text/css">
          $highlighting-css$
         </style>
-        $endif$
-
-        $for(css)$
-        <link rel="stylesheet" href="$css$">
-        $endfor$
-
-        $if(math)$$math$$endif$
+$endif$
 
         <!--[if lt IE 9]>
             <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
@@ -127,9 +41,8 @@
         $for(include-before)$$include-before$$endfor$
 
         <header>
-            <a href="https://bheesham.com/" title="Go to the home page."><h1>Bheesham Persaud</h1></a>
-            <a href="https://bheesham.com/blog/index.html" title="Go to the blog index." class="button">Blog</a>
-            <a href="https://bheesham.com/about.html" title="About the author of this site." class="button">About me</a>
+            <a href="/" title="Go to the home page."><h1>Bheesham Persaud</h1></a>
+            <a href="/blog/index.html" title="Go to the blog index." class="button">Blog</a>
 
             $if(title)$
             <h2 class="title">$title$</h2>
@@ -159,4 +72,5 @@ $body$
 
         $for(include-after)$$include-after$$endfor$
     </body>
+    $if(math)$$math$$endif$
 </html>
