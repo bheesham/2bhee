@@ -17,7 +17,7 @@ a paper on
 The paper is based on the research I did for [Anil Somayaji][SOMA], for what
 would turn into [my honours thesis][THESIS].
 
-All of this information is summarized on my [resume][RESUME].
+All of this information is available on my [resume][RESUME] in greater detail.
 
 I can be contacted at [me@bheesham.com][EMAIL]; the fingerprint for
 the [GPG key][PGP] I sometimes use is:
