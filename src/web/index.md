@@ -31,7 +31,8 @@ the [GPG key][PGP] I sometimes use is:
   * [GitHub][GH] is where I put most of my code.
   * [Twitter][TW] is where I sporadically share things.
   * [LinkedIn][LI] is where I try to seem like I'm professional.
-  * [Pinboard][PB] is where I keep a list of pages/sites I find interesting.
+  * [Pinboard][PB] is where I keep a list of sites I find interesting.
+  * [Steamed Pears][SP] is an umbrella moniker for miscellaneous projects.
 
 [CENX]: http://cenx.com/ "LSO for big companies."
 [CU]: http://carleton.ca/ "Carleton University: homepage."
@@ -45,5 +46,6 @@ the [GPG key][PGP] I sometimes use is:
 [GH]: https://github.com/bheesham "GitHub: my public code."
 [LI]: https://ca.linkedin.com/in/bheeshampersaud "LinkedIn: my professional profile."
 [PB]: https://pinboard.in/u:bheesham "Pinboard: my public bookmarks."
+[SP]: http://steamedpears.com/ "Steamed Pears."
 [PGP]: /0xD589CB73.asc "My PGP public key."
 [EMAIL]: mailto:me@bheesham.com "My email address."
