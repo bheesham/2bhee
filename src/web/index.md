@@ -6,9 +6,9 @@ date: 2016-01-04 23:17
 
 Welcome to my website.
 
-I'm a Junior Software Developer currently working at [CENX]. I worked as a
-Developer / Analyst for [Shared Services Canada][SSC] and was a Research
-Assistant for the [Carleton Computer Security Lab][CCSL].
+I'm a Software Developer currently working at [CENX]. I worked as a Developer /
+Analyst for [Shared Services Canada][SSC] and was a Research Assistant for the
+[Carleton Computer Security Lab][CCSL].
 
 I graduated from [Carleton University][CU]'s Computer Science program. With the
 help of some wonderful people at the Carleton Computer Security Lab, I published
