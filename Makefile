@@ -44,7 +44,10 @@ build/%.html:: src/web/%.tex $(T) $(WEB_OUT_DIRS)
 $(WEB_OUT_DIRS):
 	mkdir -p $@
 
+scp:
+	rsync -rvhmc --delete-excluded --del build/ bheesham.com:/srv/bheesham/
+
 clean:
 	rm -rf build/*
 
-.PHONY: clean default website resume
+.PHONY: clean default website resume scp
