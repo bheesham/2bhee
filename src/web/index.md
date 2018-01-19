@@ -1,7 +1,7 @@
 ---
 title: Home page
 author: Bheesham Persaud
-date: 2017-06-22 20:06
+date: 2017-06-22T20:06:00-05:00
 ---
 
 Welcome to my website.
@@ -14,7 +14,7 @@ Physicists][CAP], where I was a Web Developer.
 
 I graduated from [Carleton University][CU]'s Computer Science program.
 
-All of this information is available on my [resume][RESUME] in greater detail.
+All of this information is available on my [résumé][RESUME] in greater detail.
 
 I can be contacted at [me@bheesham.com][EMAIL]; the fingerprint for
 the [GPG key][PGP] I sometimes use is:

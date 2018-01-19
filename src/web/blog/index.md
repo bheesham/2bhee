@@ -1,7 +1,7 @@
 ---
 title: Blog index
 author: Bheesham Persaud
-date: 2017-01-01 23:41
+date: 2017-01-01T23:41:00-05:00
 ---
 
 ### 2017

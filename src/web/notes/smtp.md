@@ -1,5 +1,5 @@
 Title: SMTP
-Date: 2016-02-29 15:08
+Date: 2016-02-29T15:08:00-05:00
 Category: notes
 Summary: Notes on SMTP.
 

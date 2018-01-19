@@ -47,7 +47,10 @@ $(WEB_OUT_DIRS):
 scp:
 	rsync -rvhmc --delete-excluded --del build/ bheesham.com:/srv/bheesham/
 
+spell: $(RES_SOURCE_FILES)
+	aspell -c -t src/resume/main.tex
+
 clean:
 	rm -rf build/*
 
-.PHONY: clean default website resume scp
+.PHONY: clean default website resume scp spell

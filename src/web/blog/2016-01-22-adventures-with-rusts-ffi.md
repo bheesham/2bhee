@@ -1,7 +1,7 @@
 ---
 title: Adventures with Rust's FFI.
 author: Bheesham Persaud
-date: 2016-01-22 23:49
+date: 2016-01-22T23:49:00-05:00
 ---
 
 This past week I've been working on
