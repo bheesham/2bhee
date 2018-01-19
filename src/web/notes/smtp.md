@@ -1,7 +1,6 @@
-Title: SMTP
-Date: 2016-02-29T15:08:00-05:00
-Category: notes
-Summary: Notes on SMTP.
+% SMTP
+% Bheesham Persaud
+% 2016-02-29T15:08:00-05:00
 
 Sources: [Main RFC][rfc5321], [Message Submission][rfc6409],
 [Authentication][rfc4954], and [GSSAPI][rfc2743].
