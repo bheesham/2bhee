@@ -1,4 +1,4 @@
-% Starting over
+% Starting over.
 % Bheesham Persaud
 % 2016-01-04T23:47:00-05:00
 
