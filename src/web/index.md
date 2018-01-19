@@ -15,7 +15,7 @@ I was a Web Developer.
 
 I graduated from [Carleton University][CU]'s Computer Science program, earning
 myself a bachelor's degree in Computer Science: Computer &amp; Internet
-Security Stream, Honours degree.
+Security Stream, Honours.
 
 All of this information is available on my [résumé][RESUME] in greater detail.
 
