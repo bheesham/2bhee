@@ -22,11 +22,11 @@
 \pagenumbering{gobble} % Don't number pages
 \setlength{\parindent}{0pt} % Don't indent paragraphs
 \newcommand{\heading}[1]{
-	%\section*{\centering\uline{\hfill #1 \hfill }} % Center the headings
-	\section*{\uline{\hfill #1 }} % Right-align the headings
+    %\section*{\centering\uline{\hfill #1 \hfill }} % Center the headings
+    \section*{\uline{\hfill #1 }} % Right-align the headings
 }
 \newcommand{\squish}{
-    \setlength{\itemsep}{0.2pt}
+\setlength{\itemsep}{0.2pt}
     \setlength{\parskip}{0pt} % tweak parskip value to adjust total height
     \setlength{\parsep}{0.2pt}
 }
@@ -35,17 +35,21 @@
 }
 \newcommand{\experience}[3]{ % place, optional title, date
     \ifx&#2&
-        \item[{#1}]
+\item[{#1}]
     \else
-        \item[{#1}, \emph{#2}]
+\item[{#1}, \emph{#2}]
     \fi
     \when{#3}
 }
 \newcommand{\contact}[3]{
     \centerline{ \large \texttt{#1} $\bullet$ \texttt{#2} $\bullet$ \emph{#3} }
+    \vspace{0.1in}
 }
 \newcommand{\skill}[2]{
     \textbf{#1} \tabto{2.5in} #2
+}
+\newcommand{\technologies}[1]{
+    {\small \textbf{Technologies}: #1.}
 }
 % Write C++ all fancy-like
 % http://www.parashift.com/c++-faq-lite/latex-macros.html
@@ -60,136 +64,141 @@
 
 \contact{me@bheesham.com}
         {(613) 612 - 5847}
-        {Ottawa, Canada}
+        {Waterloo, Canada}
 
-\heading{Skills}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\skill{Systems Administration}
-      {GNU/Linux (CentOS, Ubuntu), Docker, ZooKeeper, Buildbot, SSH}
-
-\skill{Development}
-      {C, \CPP, C\#, Clojure, Java, Python, PHP, HTML/CSS/JavaScript}
-
-\skill{Collaboration}
-      {IRC, Git, Atlassian Jira \& Confluence}
-
-%\skill{Robotics}
-%      {Mechanical design \& prototyping, 3D modeling, OpenCV, Arduino}
+Full-stack developer with 5 years of experience looking to solve challenges
+related to managing large scale networks.
 
 \heading{Employment}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{description}
-\squish
-\experience{CENT}
-           {Software Developer}
-           {05/2016 - Present}
+        \squish
 
-Developed service assurance solutions for telecommunication companies which helps
-achieve nine nines of up-time.
+        \experience{CENX}
+                   {Software Developer}
+                   {05/2016 - 09/2017}
 
-Supported large scale production deployments by fixing high-severity software bugs.
+        Developed service assurance solutions for telecommunication companies.
 
-Improved reliability of deployments by emulating the production environment on
-developers' working environments.
+        Improved the deployment story for new components in our technology
+        stack.
 
-\experience{Shared Services Canada}
-           {Developer / Analyst}
-           {04/2015 - 01/2016}
+        Improved the development and testing workflow by emulating the
+        production environment.
 
-Optimized programs that monitor the health and usage of large networks by
-reducing disk I/O and redundant steps.
+        \technologies{Clojure, ZooKeeper, Kafka, WildFly, Datomic, PostgreSQL,
+        RethinkDB, Docker}
 
-Created intranet websites which generate reports about network outages and
-changes.
+        \experience{Shared Services Canada}
+                   {Developer / Analyst}
+                   {04/2015 - 01/2016}
 
-\experience{Carleton University}
-           {Research Assistant}
-           {05/2013 - 12/2014}
+           Optimized programs that monitor the health and usage of large
+           networks by reducing disk I/O and redundant steps.
+           
+           Created intranet websites which generate reports about network
+           outages and changes.
+           
+           \technologies{Solaris 10, C\#, Perl 5, SNMP, SAS, JavaScript}
 
-Researched gesture based authentication for Android and iOS.
+        \experience{Carleton University}
+                   {Research Assistant}
+                   {05/2013 - 12/2014}
 
-Ported complex algorithms written in JavaScript to C/\CPP for use with the Java
-Native Interface.
+            Researched methods to increase software diversity by creating
+            permutations of the OpenSSL library.
 
-Researched increasing software diversity by creating permutations of the OpenSSL
-library by using its forks: BoringSSL and LibreSSL.
+            Researched and implemented gesture based authentication for Android
+            and iOS.
+            
+            \technologies{Java, Objective-C, JavaScript, Python, PHP, C/\CPP,
+            \{Open, Boring, Libre\}SSL, \LaTeX}
 
-\experience{Carleton Computer Science Society}
-           {Director At Large: Services}
-           {05/2012 - 05/2014}
+        \experience{Carleton Computer Science Society}
+                   {Director At Large: Services}
+                   {05/2012 - 05/2014}
 
-Upgraded and maintained the different services the society ran on their Ubuntu
-servers: DNS, HTTP.
+            Maintained the HTTP and DNS services the society ran on their Ubuntu
+            servers.
 
-\experience{Canadian Association of Physicists}
-           {Web Developer}
-           {01/2012 - 04/2013}
+        \technologies{Ubuntu Server, NGINX, PowerDNS, Python, Plone}
 
-Maintained the Drupal website along with its many plugins and the Members only
-area.
+        \experience{Canadian Association of Physicists}
+                   {Lead Web Developer}
+                   {01/2012 - 04/2013}
 
-Fixed security flaws in legacy PHP and ASP systems.
+           Maintained the Drupal website along with its many plugins and the
+           Members only area.
 
-Created new services to manage the release of magazines on a quarterly basis
-using CodeIgniter (PHP).
+           Fixed security flaws in legacy PHP and ASP systems.
 
+           Created new services to manage the release of magazines on a
+           quarterly basis using CodeIgniter.
+
+           \technologies{ASP.Net, PHP, Kohana, CodeIgniter, jQuery, JavaScript,
+           Drupal, Moneris}
 \end{description}
 
 \heading{Open-source Contributions}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{description}
-\squish
-\experience{Redox}
-           {\url{https://www.redox-os.org}}
-           {}
+        \squish
+        \experience{Redox}
+                   {\url{https://www.redox-os.org}}
+                   {}
 
-Fixed bugs in the assembly which allowed the operating system to run on the x86-64 architecture.
+            Fixed bugs in the assembly which allowed the operating system to
+            run on the x86-64 architecture.
 
-\experience{xbps}
-           {\url{http://www.voidlinux.eu/}}
-           {}
+        \experience{xbps}
+                   {\url{http://www.voidlinux.eu/}}
+                   {}
 
-Improved documentation for xbps, the package manager of the Void (Linux) distribution.
+            Improved documentation for xbps, the package manager of the Void
+            (Linux) distribution.
 
-\experience{The Rust Programming Language}
-           {\url{http://rust-lang.org/}}
-           {}
+        \experience{The Rust Programming Language}
+                   {\url{http://rust-lang.org/}}
+                   {}
 
-Improved the project's build scripts and documentation.
+            Improved the project's build scripts and documentation.
 
-\experience{The Rust Project's Buildbot}
-           {\url{http://buildbot.rust-lang.org/}}
-           {}
+        \experience{The Rust Project's Buildbot}
+                   {\url{http://buildbot.rust-lang.org/}}
+                   {}
 
-Configured Buildbot to sign all release builds automatically and added basic authentication to the instance.
+            Configured Buildbot to sign all release builds automatically and added
+            basic authentication to the instance.
 \end{description}
 
 \heading{Academics}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{description}
-\squish
-\experience{Carleton University}
-           {}
-           {09/2011 - 02/2017}
+        \squish
+        \experience{Carleton University}
+                   {}
+                   {09/2011 - 02/2017}
 
-           Bachelor of Computer Science: Computer \& Internet Security Stream, Honours \\
-           \textbf{Thesis}: FrankenSSL: Recombining Cryptographic Libraries to Create Software Variants \\
-           \textbf{Supervisor}: Dr. Anil Somayaji
+            Bachelor of Computer Science: Computer \& Internet Security Stream,
+            Honours \\
+            \textbf{Thesis}: FrankenSSL: Recombining Cryptographic Libraries to
+            Create Software Variants \\
+            \textbf{Supervisor}: Dr. Anil Somayaji
 
 \end{description}
 
 \heading{Publications}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{description}
-\squish
-\experience{}
-           {}
-           {08/2016}
+        \squish
+        \experience{}
+                   {}
+                   {08/2016}
 
-B. Persaud, B. Obada-Obieh, N. Mansourzadeh, A. Moni, and A. Somayaji.
-FrankenSSL: Recombining Cryptographic Libraries for Software Diversity.
-\textit{Proceedings of the 11th Annual Symposium On Information Assurance}.
-
+            B. Persaud, B. Obada-Obieh, N. Mansourzadeh, A. Moni, and A.
+            Somayaji.  FrankenSSL: Recombining Cryptographic Libraries for
+            Software Diversity.  \textit{Proceedings of the 11th Annual
+            Symposium On Information Assurance}.
 \end{description}
 
 \end{document}

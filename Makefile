@@ -1,4 +1,4 @@
-CC=pandoc -s --normalize --highlight-style pygments \
+CC=pandoc -s --highlight-style pygments \
 		--data-dir=include --template=bhee \
 		--title-prefix "Bheesham Persaud" \
 		--mathjax

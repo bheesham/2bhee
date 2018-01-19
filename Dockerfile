@@ -1,10 +1,11 @@
 FROM debian:jessie
 
-COPY . /srv/bheesham.com/
-WORKDIR /srv/bheesham.com
+RUN apt update && \
+    apt install -y make pandoc pandoc-citeproc texlive
 
-RUN apt-get update && \
-    apt-get install -y pandoc pandoc-citeproc nginx make
+WORKDIR /usr/local/src/bheesham.com
+
+ADD . .
 
 RUN make
 
