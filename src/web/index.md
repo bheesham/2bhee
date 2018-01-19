@@ -17,6 +17,9 @@ I graduated from [Carleton University][CU]'s Computer Science program, earning
 myself a bachelor's degree in Computer Science: Computer &amp; Internet
 Security Stream, Honours.
 
+I contributed code and documentation to various open source projects, including
+the [Rust Programming Language][RUST], [xbps], [Redox].
+
 All of this information is available on my [résumé][RESUME] in greater detail.
 
 I can be contacted at [me@bheesham.com][EMAIL]; the fingerprint for
@@ -44,6 +47,9 @@ the [GPG key][PGP] I sometimes use is:
 [CCSL]: http://www.ccsl.carleton.ca/ "The Carleton Computer Science Society."
 [SOMA]: http://people.scs.carleton.ca/~soma/ "Anil Somayaji's Home Page."
 [CAP]: http://www.cap.ca/ "The Canadian Association of Physicists"
+[RUST]: https://www.rust-lang.org/ "The Rust Programming Language home page"
+[xbps]: https://wiki.voidlinux.eu/XBPS "The X Binary Package System wiki entry on Void Linux's wiki"
+[Redox]: https://www.redox-os.org/ "Redox home page"
 [RESUME]: /bheesham-persaud.pdf
 [TW]: https://twitter.com/bheeshman "Twitter: old thoughts summarized in 140 characters or less."
 [GH]: https://github.com/bheesham "GitHub: more of my public code."
