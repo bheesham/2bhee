@@ -18,7 +18,7 @@ myself a bachelor's degree in Computer Science: Computer &amp; Internet
 Security Stream, Honours.
 
 I contributed code and documentation to various open source projects, including
-the [Rust Programming Language][RUST], [xbps], [Redox].
+the [Rust Programming Language][RUST], [xbps], and [Redox].
 
 All of this information is available on my [résumé][RESUME] in greater detail.
 
